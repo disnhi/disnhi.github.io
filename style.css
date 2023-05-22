@@ -1,0 +1,53 @@
+*{
+    padding: 0px; 
+    margin: 0px;
+}
+
+
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 10px ridge grey;
+    background-image: url("./images/snow.jpeg");
+    background-size: cover;
+}
+
+#character{
+    width: 60px; /* used to be 20px */
+    height: 70px; /* used to be 50px */
+    background-image: url("./images/tree.png");
+    background-position: right, left; 
+    background-size: cover;
+    position: relative;
+    top: 130px;
+}
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 130px;}
+    20%{top: 80px;}
+    60%{top: 80px;}
+    100%{top: 130px;}
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-image: url("./images/present.png");
+    background-color: transparent;
+    position: relative;
+    background-size: cover;
+    top: 110px; /* used to be 130px */
+    left: 480px;
+    animation: block 1s infinite linear;
+          
+}
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
+
